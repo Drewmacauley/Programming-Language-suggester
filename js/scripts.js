@@ -1,4 +1,4 @@
-$(document ).ready(function() {
+$(document).ready(function() {
   $("form#personInfo").submit(function(event) {
     const gems = $("select#gems").val();
     const grade = $("select#grade").val();
