@@ -11,9 +11,9 @@ $(document).ready(function() {
         if (go === 'goS') {
           if (snake === 'cobra') {
             $("#code").text("javaScript");
-          } else if (snake === 'python'); {
-            $("#code").text("python"); {
-          } else if (snake === 'viper'); {
+          } else if (snake === 'python') {
+            $("#code").text("python"); 
+          } else if (snake === 'viper') {
             $("#code").text("swift")
           }
       } else if (go === 'stop') {
@@ -71,4 +71,6 @@ $(document).ready(function() {
     $("#result").show();
 
     event.preventDefault();
+  
+  });
 });
