@@ -9,10 +9,16 @@ $(document ).ready(function() {
     if (gems === 'diamond') {
       if (grade === 'a') {
         if (go === 'goS') {
-          if(snake === 'cobra') {
+          if (snake === 'cobra') {
+            $("#results").text("javaScript");
+          } else if (snake === 'python'); {
+            $("#results").text("python"); {
+          } else if (snake === 'viper'); {
+            $("results").text("swift")
           }
-          }
-          }
-          }
-  });
+        } else if (go === {
+        
+    $("#result").show();
+
+    event.preventDefault();
 });
