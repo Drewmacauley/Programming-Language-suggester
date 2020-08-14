@@ -10,55 +10,63 @@ $(document ).ready(function() {
       if (grade === 'a') {
         if (go === 'goS') {
           if (snake === 'cobra') {
-            $("#results").text("javaScript");
+            $("#code").text("javaScript");
           } else if (snake === 'python'); {
-            $("#results").text("python"); {
+            $("#code").text("python"); {
           } else if (snake === 'viper'); {
-            $("#results").text("swift")
+            $("#code").text("swift")
           }
       } else if (go === 'stop') {
         if (snake == 'cobra') {
-            $('#results').text("javaScript");
+            $('#code').text("javaScript");
         } else if (snake === 'python') {
-          $("results").text("python");
+          $("code").text("python");
         } else if (snake === 'viper') {
           $("results").text("swift");
         }
       } else if (go === 'yeild') {
         if (snake === 'cobra') {
-          $("#results").text("swift");
+          $("#code").text("swift");
         } else if (snake === 'python') {
-          $("#results").text("python");
+          $("#code").text("python");
         } else if (snake === 'viper') {
-          $("#results").text("javaScript");
+          $("#code").text("javaScript");
         }
       }
     } else if (grade === 'B') {
       if (go === 'goS') {
         if (snake === 'cobra') {
-          $("#results").text("goS");
+          $("#code").text("goS");
         } else if (snake === 'python') {
-          $("#results").text("rust");
+          $("#code").text("rust");
         } else if (snake === 'viper') {
-          $("#results").text("c#");
+          $("#code").text("c#");
         }
+        
       } else if (go === 'goS') {
         if (snake === 'cobra') {
-          $("#results").text("ruby");
+          $("#code").text("ruby");
         } else if (snake === 'python') {
-          $("#results").text("go");
+          $("#code").text("go");
         } else if (snake === 'viper') {
-          $("#results").text("rust");
+          $("#code").text("rust");
         }
       } else if (go === 'yield') {
         if (snake === 'cobra') {
-          $("#results").text("ruby");
+          $("#code").text("ruby");
         } else if (snake === 'python') {
-          $("#results").text("javaScript");
+          $("#code").text("javaScript");
         } else if (snake === 'viper') {
-          $("#results").text("swift");
+          $("#code").text("swift");
         }
       }
+    } else if (grade === 'c') {
+      $("#code").text("C#")
+    }
+
+    } else if (color === 'rust') {
+      $("#code").text("rust")
+    }
 
     $("#result").show();
 
