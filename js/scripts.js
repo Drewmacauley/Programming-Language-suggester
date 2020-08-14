@@ -6,7 +6,6 @@ $(document).ready(function() {
     const snake = $("selct#snake").val();
     const color = $("select#color").val();
 
-    if (gems === 'diamond') {
       if (grade === 'a') {
         if (go === 'goS') {
           if (snake === 'cobra') {
@@ -43,7 +42,7 @@ $(document).ready(function() {
           $("#code").text("swift");
         }
         
-      } else if (go === 'goS') {
+      } else if (go === 'stop') {
         if (snake === 'cobra') {
           $("#code").text("ruby");
         } else if (snake === 'python') {
@@ -63,10 +62,6 @@ $(document).ready(function() {
     } else if (grade === 'c') {
       $("#code").text("C#")
     }
-    } else if (color === 'blue') {
-      $("#code").text("swift")
-    }
-    
     $("#result").show();
 
     event.preventDefault();

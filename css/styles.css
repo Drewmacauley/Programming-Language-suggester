@@ -5,6 +5,7 @@
   background-color: grey;
 }
 .h1 {
-  text-align: center;
-  text: Italic
+  font-family: "Courier New", Courier, monospace;
+  text-align: "center";
+  text-emphasis-color: yellow
 }
