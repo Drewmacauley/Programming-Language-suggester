@@ -13,7 +13,7 @@ $(document).ready(function() {
           } else if (snake === 'python') {
             $("#code").text("python"); 
           } else if (snake === 'viper') {
-            $("#code").text("swift")
+            $("#code").text("swift");
           }
       } else if (go === 'stop') {
         if (snake == 'cobra') {
@@ -62,6 +62,7 @@ $(document).ready(function() {
     } else if (grade === 'c') {
       $("#code").text("C#")
     }
+  }
     $("#result").show();
 
     event.preventDefault();
