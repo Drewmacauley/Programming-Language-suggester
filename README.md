@@ -15,7 +15,7 @@
 
 ## Known Bugs
 
-There are no Known bugs at this time.
+Unknow bug with javascript
 
 ## Support and Contact Details
 

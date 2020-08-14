@@ -36,11 +36,11 @@ $(document).ready(function() {
     } else if (grade === 'B') {
       if (go === 'goS') {
         if (snake === 'cobra') {
-          $("#code").text("goS");
+          $("#code").text("go");
         } else if (snake === 'python') {
           $("#code").text("rust");
         } else if (snake === 'viper') {
-          $("#code").text("c#");
+          $("#code").text("swift");
         }
         
       } else if (go === 'goS') {
@@ -63,11 +63,10 @@ $(document).ready(function() {
     } else if (grade === 'c') {
       $("#code").text("C#")
     }
-
-    } else if (color === 'rust') {
-      $("#code").text("rust")
+    } else if (color === 'blue') {
+      $("#code").text("swift")
     }
-
+    
     $("#result").show();
 
     event.preventDefault();
