@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Calculator</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
@@ -10,8 +9,21 @@
 </head>
 <body>
   <div Class="container">
-    <h1>Welcome to Coding Langues </h1>
-    <p>Fill out the quiz below to see what Laugues fits you the best.</p>
-      <label for="Ruby"></label>
+    <h1>Welcome to Coding Languages </h1>
+    <p>Fill out the quiz below to see what Languages fit you the best.</p>
+      <form id="personInfo">
+        <label for="gems">What is your Faviorite Gem?</label>
+        <select id="gems">
+          <option value="diamond">Diamond</option>
+          <option value="sapphire">Sapphire</option>
+          <option value="ruby">Ruby</option>
+        </select>
 
+        <label for="grade">What was your letter grade average in High School?</label>
+        <select id="grade">
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+        </select>
+      </form>
   </div>
