@@ -34,6 +34,31 @@ $(document ).ready(function() {
         }
       }
     } else if (grade === 'B') {
+      if (go === 'goS') {
+        if (snake === 'cobra') {
+          $("#results").text("goS");
+        } else if (snake === 'python') {
+          $("#results").text("rust");
+        } else if (snake === 'viper') {
+          $("#results").text("c#");
+        }
+      } else if (go === 'goS') {
+        if (snake === 'cobra') {
+          $("#results").text("ruby");
+        } else if (snake === 'python') {
+          $("#results").text("go");
+        } else if (snake === 'viper') {
+          $("#results").text("rust");
+        }
+      } else if (go === 'yield') {
+        if (snake === 'cobra') {
+          $("#results").text("ruby");
+        } else if (snake === 'python') {
+          $("#results").text("javaScript");
+        } else if (snake === 'viper') {
+          $("#results").text("swift");
+        }
+      }
 
     $("#result").show();
 
