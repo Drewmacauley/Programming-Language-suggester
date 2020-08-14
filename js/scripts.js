@@ -14,10 +14,27 @@ $(document ).ready(function() {
           } else if (snake === 'python'); {
             $("#results").text("python"); {
           } else if (snake === 'viper'); {
-            $("results").text("swift")
+            $("#results").text("swift")
           }
-        } else if (go === {
-        
+      } else if (go === 'stop') {
+        if (snake == 'cobra') {
+            $('#results').text("javaScript");
+        } else if (snake === 'python') {
+          $("results").text("python");
+        } else if (snake === 'viper') {
+          $("results").text("swift");
+        }
+      } else if (go === 'yeild') {
+        if (snake === 'cobra') {
+          $("#results").text("swift");
+        } else if (snake === 'python') {
+          $("#results").text("python");
+        } else if (snake === 'viper') {
+          $("#results").text("javaScript");
+        }
+      }
+    } else if (grade === 'B') {
+
     $("#result").show();
 
     event.preventDefault();
