@@ -10,12 +10,13 @@
 
 ## Setup/Installation Requirments
 
-* -Clone Repository of Programming-Language-Suggester-
-* -Open index.html in your web browser-
+1. -Clone Repository - https://github.com/Drewmacauley/Programming-Language-suggester.git
+2. -Open index.html in your web browser -
+3. -View app in browser - https://drewmacauley.github.io/Programming-Language-suggester/
 
 ## Known Bugs
 
-Unknow bug with javascript
+-No known bugs
 
 ## Support and Contact Details
 
