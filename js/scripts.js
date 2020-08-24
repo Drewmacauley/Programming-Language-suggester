@@ -1,71 +1,85 @@
-$(document).ready(function() {
-  $("form#personInfo").submit(function(event) {
-    const gems = $("select#gems").val();
-    const grade = $("select#grade").val();
-    const go = $("select#go").val();
-    const snake = $("selct#snake").val();
-    const color = $("select#color").val();
+$(document).ready(function () {
+  $('form#personInfo').submit(function (event) {
+    const grade = $('select#grade').val()
+    const go = $('select#go').val()
+    const snake = $('select#snake').val()
 
-      if (grade === 'a') {
-        if (go === 'goS') {
-          if (snake === 'cobra') {
-            $("#code").text("javaScript");
-          } else if (snake === 'python') {
-            $("#code").text("python"); 
-          } else if (snake === 'viper') {
-            $("#code").text("swift");
-          }
-      } else if (go === 'stop') {
-        if (snake == 'cobra') {
-            $('#code').text("javaScript");
+    if (grade === 'a') {
+      if (go === 'goS') {
+        if (snake === 'cobra') {
+          $('#code').text('javascript')
         } else if (snake === 'python') {
-          $("code").text("python");
+          $('#code').text('python')
         } else if (snake === 'viper') {
-          $("results").text("swift");
+          $('#code').text('swift')
+        }
+      } else if (go === 'stop') {
+        if (snake === 'cobra') {
+          $('#code').text('javascript')
+        } else if (snake === 'python') {
+          $('#code').text('python')
+        } else if (snake === 'viper') {
+          $('#code').text('swift')
         }
       } else if (go === 'yeild') {
         if (snake === 'cobra') {
-          $("#code").text("swift");
+          $('#code').text('swift')
         } else if (snake === 'python') {
-          $("#code").text("python");
+          $('#code').text('python')
         } else if (snake === 'viper') {
-          $("#code").text("javaScript");
-        }
-      }
-    } else if (grade === 'B') {
-      if (go === 'goS') {
-        if (snake === 'cobra') {
-          $("#code").text("go");
-        } else if (snake === 'python') {
-          $("#code").text("rust");
-        } else if (snake === 'viper') {
-          $("#code").text("swift");
-        }
-        
-      } else if (go === 'stop') {
-        if (snake === 'cobra') {
-          $("#code").text("ruby");
-        } else if (snake === 'python') {
-          $("#code").text("go");
-        } else if (snake === 'viper') {
-          $("#code").text("rust");
-        }
-      } else if (go === 'yield') {
-        if (snake === 'cobra') {
-          $("#code").text("ruby");
-        } else if (snake === 'python') {
-          $("#code").text("javaScript");
-        } else if (snake === 'viper') {
-          $("#code").text("swift");
+          $('#code').text('javascript')
         }
       }
     } else if (grade === 'c') {
-      $("#code").text("C#")
+      if (go === 'yeild') {
+        if (snake === 'cobra') {
+          $('#code').text('ruby')
+        } else if (snake === 'viper') {
+          $('#code').text('ruby')
+        } else if (snake === 'viper') {
+          $('#code').text('swift')
+        }
+      }
+    } else if (go === 'go') {
+      if (grade === 'c') {
+        if (snake === 'cobra') {
+          $('#code').text('ruby')
+        } else if (snake === 'viper') {
+          $('#code').text('ruby')
+        } else if (snake === 'viper') {
+          $('#code').text('swift')
+        }
+      } else if (go === 'stop') {
+        if (snake === 'cobra') {
+          $('#code').text('ruby')
+        } else if (snake === 'python') {
+          $('#code').text('javascript')
+        } else if (snake === 'viper') {
+          $('#code').text('ruby')
+        }
+      } else if (go === 'yeild') {
+        if (snake === 'viper') {
+          $('#code').text('swift')
+        } else if (snake === 'cobra') {
+          $('#code').text('ruby')
+        } else if (snake === 'python') {
+          $('#celebrity').text('javascript')
+        }
+      }
+    } else if (grade === 'b') {
+      if (snake === 'viper') {
+        $('#code').text('swift')
+      } else if (snake === 'cobra') {
+        $('#code').text('ruby')
+      } else if (snake === 'python') {
+        $('#celebrity').text('javascript')
+      }
+    } else if (grade === 'c') {
+      $('#code').text('c#')
     }
-  }
-    $("#result").show();
 
-    event.preventDefault();
-  
-  });
-});
+    $('#result').show()
+
+    event.preventDefault()
+  })
+})
